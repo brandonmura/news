@@ -14,8 +14,29 @@
 </nav>
 
 <section class="container mx-auto p-4">
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4" id="news-container">
-        <!-- News articles will be inserted here -->
+    <div class="flex flex-col sm:flex-row">
+        <aside class="w-full sm:w-1/4 p-4 bg-white rounded shadow-md">
+            <h2 class="text-lg font-semibold mb-4">Categories Available</h2>
+            <ul>
+                <li><a href="#" class="text-blue-500 category-link" data-category="technology">Technology</a></li>
+                <li><a href="#" class="text-blue-500 category-link" data-category="sports">Sports</a></li>
+                <li><a href="#" class="text-blue-500 category-link" data-category="business">Business</a></li>
+                <li><a href="#" class="text-blue-500 category-link" data-category="politics">Politics</a></li>
+            </ul>
+        </aside>
+        <section class="w-full sm:w-3/4 p-4">
+            <form id="search-form" class="mb-4">
+                <input type="text" id="search-input" placeholder="Search articles..." class="w-full p-2 border rounded-md mr-2">
+                <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded-md">Search</button>
+            </form>            
+            <div id="news-container" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+                <!-- News articles will be inserted here -->
+            </div>
+            <footer class="mt-4 flex justify-between">
+                <button id="prev-page" class="bg-blue-500 text-white px-4 py-2 rounded-md">Previous</button>
+                <button id="next-page" class="bg-blue-500 text-white px-4 py-2 rounded-md">Next</button>
+            </footer>
+        </section>
     </div>
 </section>
 
