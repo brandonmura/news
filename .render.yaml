@@ -1,0 +1,4 @@
+buildCommand: npm install frontend && npm run build frontend
+env:
+  - key: NEWS_API_KEY
+    fromDatabase: true
